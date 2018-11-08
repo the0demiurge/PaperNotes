@@ -1,0 +1,16 @@
+{
+  "title": "PaperNotes",
+  "author": "Charles Xu",
+  "plugins": [
+    "katex",
+    "copy-code-button",
+    "graphviz@git+https://github.com/darvasd/gitbook-plugin-graphviz.git"
+  ],
+  "ignores": [
+    "_book",
+    "node_modules"
+  ],
+  "pdf": {
+    "fontFamily": "SimSun"
+  }
+}
