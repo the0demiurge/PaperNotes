@@ -1,0 +1,557 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>2019.Nature.Grandmaster level in StarCraft II using multi-agent reinforcement learning · PaperNotes</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Charles Xu">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Meta Learning
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../Meta-Learning/2001.ICANN.Learning to Learning Using Gradient Descent.html">
+            
+                <a href="../Meta-Learning/2001.ICANN.Learning to Learning Using Gradient Descent.html">
+            
+                    
+                    2001.ICANN.Learning to Learning Using Gradient Descent
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../Meta-Learning/2001.Reinforcement Learning with LSTM in Non-Markovian Tasks with Long-Term Dependencies.html">
+            
+                <a href="../Meta-Learning/2001.Reinforcement Learning with LSTM in Non-Markovian Tasks with Long-Term Dependencies.html">
+            
+                    
+                    2001.Reinforcement Learning with LSTM in Non-Markovian Tasks with Long-Term Dependencies
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../Meta-Learning/2003.Nature Reviews.Neural Foundations of Logical and Mathmetical Cognition.html">
+            
+                <a href="../Meta-Learning/2003.Nature Reviews.Neural Foundations of Logical and Mathmetical Cognition.html">
+            
+                    
+                    2003.Nature Reviews.Neural Foundations of Logical and Mathmetical Cognition
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../Meta-Learning/2015.EMNLP.Language Understanding for Text-based Games using Deep Reinforcement Learning.html">
+            
+                <a href="../Meta-Learning/2015.EMNLP.Language Understanding for Text-based Games using Deep Reinforcement Learning.html">
+            
+                    
+                    2015.EMNLP.Language Understanding for Text-based Games using Deep Reinforcement Learning
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../Meta-Learning/2016.AAAI.Learning Step Size Controllers for Robust Neural Network Training.html">
+            
+                <a href="../Meta-Learning/2016.AAAI.Learning Step Size Controllers for Robust Neural Network Training.html">
+            
+                    
+                    2016.AAAI.Learning Step Size Controllers for Robust Neural Network Training
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../Meta-Learning/2016.Neural Architecture Search with Reinforcement Learning.html">
+            
+                <a href="../Meta-Learning/2016.Neural Architecture Search with Reinforcement Learning.html">
+            
+                    
+                    2016.Neural Architecture Search with Reinforcement Learning
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../Meta-Learning/2016.NIPS.Learning to learn by gradient descent by gradient descent.html">
+            
+                <a href="../Meta-Learning/2016.NIPS.Learning to learn by gradient descent by gradient descent.html">
+            
+                    
+                    2016.NIPS.Learning to learn by gradient descent by gradient descent
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../Meta-Learning/2016.OpenAI.RL$2$ Fast Reinforcement Learning via Slow Reinforcement Learning.html">
+            
+                <a href="../Meta-Learning/2016.OpenAI.RL$2$ Fast Reinforcement Learning via Slow Reinforcement Learning.html">
+            
+                    
+                    2016.OpenAI.RL$2$ Fast Reinforcement Learning via Slow Reinforcement Learning
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="../Meta-Learning/2017.NIPS.Optimization As a Model for Few-Shot Learning.html">
+            
+                <a href="../Meta-Learning/2017.NIPS.Optimization As a Model for Few-Shot Learning.html">
+            
+                    
+                    2017.NIPS.Optimization As a Model for Few-Shot Learning
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Reinforcement Learning
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.3.1" data-path="2019.Nature.Grandmaster level in StarCraft II using multi-agent reinforcement learning.html">
+            
+                <a href="2019.Nature.Grandmaster level in StarCraft II using multi-agent reinforcement learning.html">
+            
+                    
+                    2019.Nature.Grandmaster level in StarCraft II using multi-agent reinforcement learning
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >2019.Nature.Grandmaster level in StarCraft II using multi-agent reinforcement learning</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="alpahstar">AlpahStar</h1>
+<h2 id="challenges">Challenges</h2>
+<ul>
+<li>vast space of cyclic, non-transitive strategies and counter-strategies</li>
+<li>self-play hard to get novel strategies</li>
+<li>strategies not effective in real world play</li>
+<li>large action space(1e3)</li>
+<li>imperfect information</li>
+</ul>
+<h2 id="human-data">Human Data</h2>
+<p>Hardly explore useful tactics with naive exploration. Good actions are really sparse.</p>
+<ul>
+<li>supervized learning</li>
+<li>human statistic <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>z</mi></mrow><annotation encoding="application/x-tex">z</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.04398em;">z</span></span></span></span>, reward agents which follows human strategy, or punish actions disobeying supervizing policies.</li>
+</ul>
+<h2 id="env">ENV</h2>
+<ul>
+<li>1e4 steps</li>
+<li>10-min episode</li>
+</ul>
+<h3 id="obs">OBS</h3>
+<ul>
+<li>a list of observable items and its attrs</li>
+</ul>
+<h3 id="act">Act</h3>
+<ul>
+<li>1e3 choices</li>
+<li>structured<ul>
+<li><strong>action</strong> type(1e2): move, build a worker</li>
+<li><strong>object</strong>: who to issue that action to, for any subset of the agent&apos;s units</li>
+<li><strong>spacial</strong>: where to target, among locations on the map or units within the camera view</li>
+<li><strong>time</strong>: when the next action will be issued</li>
+</ul>
+</li>
+<li><strong>move camera view</strong></li>
+<li>1e26 combinations</li>
+</ul>
+<h3 id="states">States</h3>
+<ul>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>o</mi><mrow><mn>1</mn><mo>:</mo><mi>t</mi></mrow></msub></mrow><annotation encoding="application/x-tex">o_{1: t}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.58056em;vertical-align:-0.15em;"></span><span class="base textstyle uncramped"><span class="mord"><span class="mord mathit">o</span><span class="msupsub"><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord scriptstyle cramped mtight"><span class="mord mathrm mtight">1</span><span class="mrel mtight">:</span><span class="mord mathit mtight">t</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span>&#x200B;</span></span></span></span></span></span></span></li>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>a</mi><mrow><mn>1</mn><mo>:</mo><mi>t</mi><mo>&#x2212;</mo><mn>1</mn></mrow></msub></mrow><annotation encoding="application/x-tex">a_{1: t-1}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.638891em;vertical-align:-0.208331em;"></span><span class="base textstyle uncramped"><span class="mord"><span class="mord mathit">a</span><span class="msupsub"><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord scriptstyle cramped mtight"><span class="mord mathrm mtight">1</span><span class="mrel mtight">:</span><span class="mord mathit mtight">t</span><span class="mbin mtight">&#x2212;</span><span class="mord mathrm mtight">1</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span>&#x200B;</span></span></span></span></span></span></span></li>
+</ul>
+<h3 id="monitor-layer">Monitor layer</h3>
+<ul>
+<li>network latency and computation time</li>
+<li>APM limits</li>
+</ul>
+<h2 id="policy">Policy</h2>
+<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>&#x3C0;</mi><mi>&#x3B8;</mi></msub><mo>(</mo><msub><mi>a</mi><mi>t</mi></msub><mi mathvariant="normal">&#x2223;</mi><msub><mi>s</mi><mi>t</mi></msub><mo separator="true">,</mo><mi>z</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">\pi_\theta(a_t|s_t,z)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base textstyle uncramped"><span class="mord"><span class="mord mathit" style="margin-right:0.03588em;">&#x3C0;</span><span class="msupsub"><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:-0.03588em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord mathit mtight" style="margin-right:0.02778em;">&#x3B8;</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span>&#x200B;</span></span></span></span><span class="mopen">(</span><span class="mord"><span class="mord mathit">a</span><span class="msupsub"><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord mathit mtight">t</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span>&#x200B;</span></span></span></span><span class="mord mathrm">&#x2223;</span><span class="mord"><span class="mord mathit">s</span><span class="msupsub"><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord mathit mtight">t</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span>&#x200B;</span></span></span></span><span class="mpunct">,</span><span class="mord mathit" style="margin-right:0.04398em;">z</span><span class="mclose">)</span></span></span></span></p>
+<p>map(s, z) -&gt; a</p>
+<h3 id="agents">Agents</h3>
+<ul>
+<li>Algorithm: <ol>
+<li>policy gradient similar to advantage actor-critic</li>
+<li>asynchronously on repalyed experiences</li>
+<li>off-policy</li>
+</ol>
+</li>
+<li>temporal difference learning(TD(<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>&#x3BB;</mi></mrow><annotation encoding="application/x-tex">\lambda</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.69444em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">&#x3BB;</span></span></span></span>))</li>
+<li>clipped importance sampling(V-trace)</li>
+<li>self-imitation algorithm(UPGO)</li>
+<li>value function share weights: estimated using both player&apos;s and opponents&apos;s perspectives</li>
+</ul>
+<h3 id="league-training">League training</h3>
+<p>Priortized Fictitious self-play(PFSP)</p>
+<ul>
+<li><strong>main agent</strong>: priortized fictitious self-play, be selected as an opponent</li>
+<li><strong>main exploiter agents</strong>: play with only current iteration of <strong>main agent</strong></li>
+</ul>
+<p><?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.40.1 (20161225.0304)
+ -->
+<!-- Title: agents Pages: 1 -->
+<svg width="506pt" height="238pt" viewbox="0.00 0.00 506.38 238.40" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 234.4)">
+<title>agents</title>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-234.4 502.3758,-234.4 502.3758,4 -4,4"/>
+<!-- main -->
+<g id="node1" class="node">
+<title>main</title>
+<ellipse fill="none" stroke="#000000" cx="141.8596" cy="-106.8" rx="30.1958" ry="18"/>
+<text text-anchor="middle" x="141.8596" y="-102.6" font-family="Times,serif" font-size="14.00" fill="#000000">main</text>
+</g>
+<!-- oppo -->
+<g id="node2" class="node">
+<title>oppo</title>
+<ellipse fill="none" stroke="#000000" cx="141.8596" cy="-18" rx="30.2015" ry="18"/>
+<text text-anchor="middle" x="141.8596" y="-13.8" font-family="Times,serif" font-size="14.00" fill="#000000">oppo</text>
+</g>
+<!-- main&#45;&gt;oppo -->
+<g id="edge1" class="edge">
+<title>main-&gt;oppo</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M126.8799,-90.8254C122.344,-84.9737 117.944,-78.0085 115.5938,-70.8 113.2794,-63.7011 113.2794,-61.0989 115.5938,-54 116.9158,-49.9452 118.8863,-45.9674 121.1648,-42.2215"/>
+<polygon fill="#000000" stroke="#000000" points="124.0607,-44.1875 126.8799,-33.9746 118.3072,-40.2003 124.0607,-44.1875"/>
+<text text-anchor="middle" x="134.4925" y="-58.2" font-family="Times,serif" font-size="14.00" fill="#000000">fixed p</text>
+</g>
+<!-- oppo&#45;&gt;main -->
+<g id="edge2" class="edge">
+<title>oppo-&gt;main</title>
+<path fill="none" stroke="#000000" d="M149.5948,-35.6115C151.744,-41.3591 153.7827,-47.8472 154.8596,-54 156.1469,-61.3549 156.1469,-63.4451 154.8596,-70.8 154.3548,-73.6841 153.6387,-76.6419 152.7989,-79.5626"/>
+<polygon fill="#000000" stroke="#000000" points="149.4323,-78.5949 149.5948,-89.1885 156.074,-80.8057 149.4323,-78.5949"/>
+</g>
+<!-- exploit -->
+<g id="node3" class="node">
+<title>exploit</title>
+<ellipse fill="none" stroke="#000000" cx="37.8596" cy="-212.4" rx="37.7198" ry="18"/>
+<text text-anchor="middle" x="37.8596" y="-208.2" font-family="Times,serif" font-size="14.00" fill="#000000">exploit</text>
+</g>
+<!-- exploit&#45;&gt;main -->
+<g id="edge3" class="edge">
+<title>exploit-&gt;main</title>
+<path fill="none" stroke="#000000" d="M47.4666,-194.9889C56.3047,-179.999 70.4556,-158.3844 86.5706,-142.8 93.6453,-135.9583 102.1992,-129.6539 110.4425,-124.2967"/>
+<polygon fill="#000000" stroke="#000000" points="112.5288,-127.1212 119.1807,-118.8748 108.8381,-121.1732 112.5288,-127.1212"/>
+<text text-anchor="middle" x="146.5041" y="-163.8" font-family="Times,serif" font-size="14.00" fill="#000000">current main iteration</text>
+<text text-anchor="middle" x="146.5041" y="-147" font-family="Times,serif" font-size="14.00" fill="#000000">find weakness</text>
+</g>
+<!-- exploit&#45;&gt;exploit -->
+<g id="edge5" class="edge">
+<title>exploit-&gt;exploit</title>
+<path fill="none" stroke="#000000" stroke-dasharray="1,5" d="M70.0051,-222.0905C82.8978,-222.638 93.7193,-219.4078 93.7193,-212.4 93.7193,-207.3631 88.1289,-204.2778 80.1971,-203.144"/>
+<polygon fill="#000000" stroke="#000000" points="80.1451,-199.6387 70.0051,-202.7095 79.8469,-206.6324 80.1451,-199.6387"/>
+<text text-anchor="middle" x="110.8231" y="-208.2" font-family="Times,serif" font-size="14.00" fill="#000000">re-init</text>
+</g>
+<!-- league -->
+<g id="node4" class="node">
+<title>league</title>
+<ellipse fill="none" stroke="#000000" cx="245.8596" cy="-212.4" rx="100.1201" ry="18"/>
+<text text-anchor="middle" x="245.8596" y="-208.2" font-family="Times,serif" font-size="14.00" fill="#000000">league exploiter agents</text>
+</g>
+<!-- league&#45;&gt;main -->
+<g id="edge4" class="edge">
+<title>league-&gt;main</title>
+<path fill="none" stroke="#000000" d="M239.3457,-194.2958C233.141,-179.0706 222.5621,-157.4965 207.8596,-142.8 199.0779,-134.0218 187.7086,-126.7963 176.8877,-121.1818"/>
+<polygon fill="#000000" stroke="#000000" points="178.122,-117.8901 167.5983,-116.6639 175.0604,-124.1851 178.122,-117.8901"/>
+<text text-anchor="middle" x="364.6177" y="-163.8" font-family="Times,serif" font-size="14.00" fill="#000000">PFSP without targeted by main exploiter agents</text>
+<text text-anchor="middle" x="364.6177" y="-147" font-family="Times,serif" font-size="14.00" fill="#000000">finds system weakness</text>
+</g>
+<!-- league&#45;&gt;league -->
+<g id="edge6" class="edge">
+<title>league-&gt;league</title>
+<path fill="none" stroke="#000000" stroke-dasharray="1,5" d="M331.0255,-221.8999C350.041,-221.0256 363.9197,-217.859 363.9197,-212.4 363.9197,-207.9646 354.7575,-205.0425 341.1223,-203.6336"/>
+<polygon fill="#000000" stroke="#000000" points="341.2529,-200.134 331.0255,-202.9001 340.7456,-207.1156 341.2529,-200.134"/>
+<text text-anchor="middle" x="381.0235" y="-208.2" font-family="Times,serif" font-size="14.00" fill="#000000">re-init</text>
+</g>
+</g>
+</svg>
+</p>
+<h3 id="model">Model</h3>
+<ul>
+<li><strong>self-attention</strong> of obs</li>
+<li><strong>scatter connections</strong>: to integrate spatial and non-spatial features</li>
+<li><strong>LSTM</strong>: partial obs</li>
+<li><strong>auto-regressive policy and recurrent pointer network</strong>: structured combinatorial action space</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"2019.Nature.Grandmaster level in StarCraft II using multi-agent reinforcement learning","level":"1.3.1","depth":2,"previous":{"title":"Reinforcement Learning","level":"1.3","depth":1,"ref":"","articles":[{"title":"2019.Nature.Grandmaster level in StarCraft II using multi-agent reinforcement learning","level":"1.3.1","depth":2,"path":"Reinforcement-Learning/2019.Nature.Grandmaster level in StarCraft II using multi-agent reinforcement learning.md","ref":"Reinforcement-Learning/2019.Nature.Grandmaster level in StarCraft II using multi-agent reinforcement learning.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["katex","copy-code-button","graphviz@git+https://github.com/darvasd/gitbook-plugin-graphviz.git","expandable-chapters"],"ignores":["_book","node_modules"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"graphviz":{"format":"svg"},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"Charles Xu","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"SimSun","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"PaperNotes","graphviz":{"format":"svg","engine":"dot"},"gitbook":"*"},"file":{"path":"Reinforcement-Learning/2019.Nature.Grandmaster level in StarCraft II using multi-agent reinforcement learning.md","mtime":"2021-01-04T13:41:39.878Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-01-04T13:46:13.497Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
