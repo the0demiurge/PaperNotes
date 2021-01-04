@@ -11,7 +11,7 @@ echo "\`\`\`" |tee -a README.md
 if [ ! -z $1 ];then
     if [ ! -d books ];then mkdir books;fi
     gitbook build
-    gitbook pdf . books/PaperNotes.pdf
+    #gitbook pdf . books/PaperNotes.pdf
     gitbook epub . books/PaperNotes.epub
     gitbook mobi . books/PaperNotes.mobi
     cp -r books _book
