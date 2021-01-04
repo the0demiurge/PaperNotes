@@ -4,7 +4,8 @@
   "plugins": [
     "katex",
     "copy-code-button",
-    "graphviz@git+https://github.com/darvasd/gitbook-plugin-graphviz.git"
+    "graphviz@git+https://github.com/darvasd/gitbook-plugin-graphviz.git",
+    "expandable-chapters"
   ],
   "ignores": [
     "_book",
@@ -12,5 +13,9 @@
   ],
   "pdf": {
     "fontFamily": "SimSun"
+  },
+  "graphviz": {
+    "format": "svg",
+    "engine": "dot"
   }
 }
