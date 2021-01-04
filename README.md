@@ -4,9 +4,9 @@ This is my notes, powered by GitBook, GitHub Pages, Travis CI.
 
 Book Source: [PaperNotes](https://github.com/the0demiurge/PaperNotes)
 
-Online Reading: [papers.pythonic.life](https://papers.pythonic.life)
+Online Reading: [notes.pythonic.life](https://notes.pythonic.life)
 
-Building status: [![Build Status](https://www.travis-ci.com/the0demiurge/PaperNotes.svg?branch=master)](https://www.travis-ci.com/the0demiurge/PaperNotes)
+![GitBook-Legacy to GitHub Pages](https://github.com/the0demiurge/PaperNotes/workflows/GitBook-Legacy%20to%20GitHub%20Pages/badge.svg)
 
 ## Download Offline Version
 
